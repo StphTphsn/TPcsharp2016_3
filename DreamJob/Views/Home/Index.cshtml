@@ -1,0 +1,28 @@
+﻿@model DreamJob.ViewModels.HomeViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Titre</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>created</th>
+            <th>title</th>
+        </tr>
+        @{
+            foreach (var article in Model.ListeDesArticles)
+            {
+                <tr>
+                    <td>@article.created</td>
+                    <td>@article.title</td>
+                </tr>
+            }
+        }
+    </table>
+</body>
+</html>
+
