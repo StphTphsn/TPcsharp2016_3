@@ -12,5 +12,5 @@ Modifier le code pour appliquer les consignes suivantes :
 4) Rendez le titre de l'offre clickable. Lors du click un nouvel onglet s'ouvre vers l'url correspondant à l'offre d'emploi.
 5) Afficher la date du jour sur la page web (en plus des offres d'emploi). 
 Pour ce faire, adaptez la classe HomeViewModel et le reste du code.
-BONUS2 : implémentez un login
-BONUS1 : implémentez une recherche par mot clef des offres sur le site web
+BONUS1 : implémentez un login
+BONUS2 : implémentez une recherche par mot clef des offres sur le site web
