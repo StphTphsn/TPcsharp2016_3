@@ -1,5 +1,16 @@
+Sur https://openclassrooms.com/courses/apprendre-asp-net-mvc, lire les chapitres : 
+- Introduction à ASP.NET MVC
+- Le Pattern MVC
+- Hello World MVC (Appliquer les consignes)
+- Convention plutôt que configuration
+
+Cloner le répertoire sur Visual Studio WEB: https://github.com/StphTphsn/TPcsharp2016_2
+Modifier le code pour appliquer les consignes suivantes : 
 1) Afficher les offres d'emploi par ordre antéchronologique
 2) N'affichez que les 3 premières offres d'emploi de la liste ainsi triée
 3) Afficher le 'body' de l'offre, tronquée à 400 caractères
 4) Rendez le titre de l'offre clickable. Lors du click un nouvel onglet s'ouvre vers l'url correspondant à l'offre d'emploi.
-BONUS : implémentez une recherche par mot clef des offres
+5) Afficher la date du jour sur la page web (en plus des offres d'emploi). 
+Pour ce faire, adaptez la classe HomeViewModel et le reste du code.
+BONUS2 : implémentez un login
+BONUS1 : implémentez une recherche par mot clef des offres sur le site web
