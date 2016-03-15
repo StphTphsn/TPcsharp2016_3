@@ -11,5 +11,6 @@ namespace DreamJob.Models
     {
         public DBEntities() : base(nameOrConnectionString: "LocalDBconnection") { }
         public DbSet<Article> Article { get; set; }
+        public DbSet<Utilisateur> Utilisateurs { get; set; }
     }
 }

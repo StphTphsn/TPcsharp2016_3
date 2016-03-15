@@ -22,5 +22,9 @@ namespace DreamJob.Models
 
         public DateTime created { get; set; }
 
+        public int up_votes { get; set; }
+
+        public int down_votes { get; set; }
+
     }
 }

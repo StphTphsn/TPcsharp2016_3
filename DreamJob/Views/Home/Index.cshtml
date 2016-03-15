@@ -1,4 +1,9 @@
 ﻿@model DreamJob.ViewModels.HomeViewModel
+@{
+    Layout = null;
+    <script src="~/scripts/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+}
 
 <!DOCTYPE html>
 
@@ -8,17 +13,27 @@
     <title>Titre</title>
 </head>
 <body>
+    @Html.Action("Index","Login")
     <table>
         <tr>
             <th>created</th>
             <th>title</th>
+            <th>up</th>
+            <th></th>
+            <th>down</th>
+            <th></th>
         </tr>
         @{
-            foreach (var article in Model.ListeDesArticles)
+    foreach (var article in Model.ListeDesArticles)
             {
                 <tr>
-                    <td>@article.created</td>
-                    <td>@article.title</td>
+                    <td> @article.created.ToString("le d MMM yyyy")</td>
+                    <td><a href=@article.link target="_blank">@article.title</a></td>
+                    <td> @article.up_votes</td>
+                    <td> <button type="button" name="up" value="Up vote" onclick="location.href='@Url.Action("UpVote", "Home")?id=@article.id'" />Up</td>
+                    <td> @article.down_votes</td>
+                    <td> <button type="button" name="down" value="Down vote" onclick="location.href='@Url.Action("DownVote", "Home")?id=@article.id'" />Down</td>
+
                 </tr>
             }
         }
