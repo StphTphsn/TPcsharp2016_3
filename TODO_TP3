@@ -1,0 +1,22 @@
+1) Clonez ce repertoire sur votre ordinateur (vous pouvez le faire à partir de Visual Studio).
+
+2) Creez une base de donnes locale utilisateurs avec les proprietes suivantes:
+
+CREATE TABLE `mysqltest`.`utilisateurs` (
+  `Prenom` VARCHAR(300) NOT NULL,
+  `MotDePasse` VARCHAR(300) NOT NULL,
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  UNIQUE INDEX `Prenom_UNIQUE` (`Prenom` ASC),
+  PRIMARY KEY (`Id`));
+
+3) Tentez de creer un nouvel utilisateur sans mot de passe. Un message d'erreur en anglais s'affiche. 
+Changez ce message d'erreur pour qu'il s'affiche en français.
+
+4) Creez un nouvel utilisateur. Tentez de voter plusieurs fois pour une meme offre d'emploi. Ca marche alors que ça ne devrait pas. 
+Corrigez ce bug.
+
+5) Faites en sorte qu'on ne puisse pas à la fois voter pour et contre une offre d'emploi.
+
+BONUS : Pour le moment, l'action de voter a pour effet de réactualiser toute la page (= demander la page au serveur). 
+Faites en sorte de ne pas rappeler la page lors du vote, tout en réactualisant l'affichage et le décompte cote serveur.
+
