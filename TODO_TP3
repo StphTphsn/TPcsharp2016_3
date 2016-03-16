@@ -1,3 +1,8 @@
+Partie I
+
+0) Sur https://openclassrooms.com/courses/apprendre-asp-net-mvc/, lire le chapitre suivant sans appliquer les consignes:
+- economiser-son-code-avec-les-helpers-et-les-vues-partielles
+
 1) Clonez ce repertoire sur votre ordinateur (vous pouvez le faire à partir de Visual Studio).
 
 2) Creez une base de donnes locale utilisateurs avec les proprietes suivantes:
@@ -20,3 +25,5 @@ Corrigez ce bug.
 BONUS : Pour le moment, l'action de voter a pour effet de réactualiser toute la page (= demander la page au serveur). 
 Faites en sorte de ne pas rappeler la page lors du vote, tout en réactualisant l'affichage et le décompte cote serveur.
 
+Partie II : Brainstorming
+Designez un système de recommendation adapté au cas de ce site web.
