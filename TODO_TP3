@@ -14,6 +14,11 @@ CREATE TABLE `mysqltest`.`utilisateurs` (
   UNIQUE INDEX `Prenom_UNIQUE` (`Prenom` ASC),
   PRIMARY KEY (`Id`));
 
+et ajouter les colonnes up_votes et down_votes a la table articles:
+
+ALTER TABLE mysqltest.articles ADD down_votes INT DEFAULT 0;
+ALTER TABLE mysqltest.articles ADD up_votes INT DEFAULT 0;
+
 3) Tentez de creer un nouvel utilisateur sans mot de passe. Un message d'erreur en anglais s'affiche. 
 Changez ce message d'erreur pour qu'il s'affiche en français.
 
@@ -26,4 +31,4 @@ BONUS : Pour le moment, l'action de voter a pour effet de réactualiser toute la
 Faites en sorte de ne pas rappeler la page lors du vote, tout en réactualisant l'affichage et le décompte cote serveur.
 
 Partie II : Brainstorming
-Designez un système de recommendation adapté au cas de ce site web.
+Definir un système de recommendation adapté au cas de ce site web.
